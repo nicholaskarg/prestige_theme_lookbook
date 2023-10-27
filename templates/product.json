@@ -53,9 +53,10 @@
         },
         "buy_buttons": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
-            "show_payment_button": true,
-            "show_gift_card_recipient": true,
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
             "atc_button_background": "",
             "atc_button_text_color": "",
             "payment_button_background": "",
@@ -131,7 +132,7 @@
           "type": "richtext",
           "repeater": "{{ product.metafields.custom.vendors.value }}",
           "settings": {
-            "content": "<p>{{ block.repeater.vendorName.value }}  {{ block.repeater.city.value }}  {{ block.repeater.country.value }}  {{ block.repeater.address.value }}  {{ block.repeater.telephoneNumber.value }}  {{ block.repeater.email.value }}<\/p>"
+            "content": "<p>{{ block.repeater.vendorName.value }}  {{ block.repeater.city.value }}  {{ block.repeater.country.value }}  {{ block.repeater.address.value }}  {{ block.repeater.telephoneNumber.value }}  {{ block.repeater.email.value }}ffg<\/p>"
           }
         }
       },
